@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table,th,td{
+            border: solid black 1px;
+            padding: 10px;
+            border-collapse:separate;
+            border-radius: 10px;
+            text-align: center;
+            border-spacing: 10px;
+        }
+        th,td{
+            border-radius: 10px;
+            border-style: dashed;
+        }
+        table{
+            border-style:dotted;
+            border-color: brown;
+            margin-left: 400px;
+            margin-top: 300px;
+        }
+        h2{
+            background-color: crimson; 
+            text-align: center; 
+            padding: 10px; 
+            width: 400px;
+            margin-left: 430px;
+        }
+        td{
+            text-align: left;
+        }
+        tr:nth-child(even) {
+  background-color: plum;
+}
+tr:nth-child(odd) {
+  background-color:pink;
+}
+td:nth-child(odd), th:nth-child(odd) {
+  background-color: #D6EEEE;
+}
+    </style>
+</head>
+<body>
+    <h2>HTML TABLES</h2>
+    <table style="width: 500px;">
+        <tr>
+            <th style="width: 300px;" colspan="2">Name</th>
+            <th style="width: 300px;">Subject 1</th>
+            <th style="width: 300px;" rowspan="2">Subject 2</th>
+        </tr>
+        <tr>
+            <td>Person A</td>
+            <td>Tamil</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>Person B</td>
+            <td>Maths</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>Person C</td>
+            <td>Social science</td>
+            <td>Hindi</td>
+        </tr>
+    </table>
+    
+</body>
+</html>

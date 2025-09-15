@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Images</title>
+    <style>
+      body{
+        background-image: url('backgroundimage.webp');
+         background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+    </style>
+</head>
+<body>
+    <!--Simple image tag(absolute URL) -->
+    <img src="https://th.bing.com/th/id/OIP.hXArBsiU-tUk43fX-lwvOQHaHa?w=270&h=203&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">
+    <!-- Simple image <relative URL -->
+     <img src="../assets/cake.webp" alt="A cake image">
+     <img src="./images/cake.webp">
+     <!-- imagemap -->
+      <img src="https://th.bing.com/th/id/OIP.cAw0I5Gc9vqtOc7v-OjgHwHaEm?w=268&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Example Image Map" usemap="#shapes" width="600" height="400">
+<map name="shapes">
+  <!-- Rectangle -->
+  <area shape="rect" coords="34,44,270,350" href="https://www.geeksforgeeks.org/" alt="Rectangle">
+  <!-- Circle -->
+  <area shape="circle" coords="400,150,60" href="https://leetcode.com/" alt="Circle">
+  <!-- Polygon -->
+  <area shape="poly" coords="320,200,400,250,420,320,300,300" href="https://www.hackerrank.com/" alt="Polygon">
+</map>
+<!-- Picture element -->
+ <picture>
+  <source srcset="./images/cake.webp" type="image/avif">
+  <source srcset="./images/cake.webp" type="image/webp">
+  <img src="" alt="A high-quality image">
+</picture>
+
+
+</body>
+</html>

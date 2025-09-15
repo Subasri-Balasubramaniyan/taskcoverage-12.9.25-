@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <style>
+a:link{
+    color: brown;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:visited{
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover{
+    color: chartreuse;
+    background-color: transparent;
+    text-decoration: dotted;
+}
+a:active{
+color: burlywood;
+background-color: transparent;
+text-decoration: none;
+}
+.hackerrank{
+    border: solid black 2px;
+    margin-left: 50px;
+    margin-top: 50px;
+    padding: 10px;
+    background-color: plum;
+    font-weight: bold;
+width: 200px;
+height: 30px;
+text-align: center;
+}
+</style>
+</head>
+<body>
+    <!-- Simple hyperlinks -->
+     <a href="https://leetcode.com/">Visit Leetcode</a><br>
+     <!-- Target attribute -->
+       <a href="https://leetcode.com/" target="_self">self Leetcode</a><br>
+        <a href="https://leetcode.com/" target="_blank">BlankLeetcode</a><br>
+         <a href="https://leetcode.com/" target="_parent">parent Leetcode</a><br>
+          <a href="https://leetcode.com/" target="_top">Top Leetcode</a><br>
+<!-- Absolute URL -->
+ <a href="https://th.bing.com/th/id/OIP.Cqt6j3TVGiYzPIwcrii1_gHaDt?w=280&h=174&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3">HTML</a>
+ <!-- Relative URL -->
+  <a href="./css.webp">CSS</a><br>
+  <!-- usage of image as link -->
+<a href="https://www.geeksforgeeks.org/"><img src="https://th.bing.com/th/id/OIP.9EpMdgmdRO48As0fk0pB7QHaFM?w=242&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"style="width: 100px; height=200px;"></a>
+<!-- Use email as link -->
+ <a href="mailto:subasribalu111@gmail.com">Send mail</a><br>
+ <!-- Button as link -->
+  <button onclick="document.location='https://www.hackerrank.com/'">Click me</button><br>
+  <!-- Title links -->
+   <div class="hackerrank">
+   <a href="https://www.hackerrank.com/" title="Go to Hackerrank">Visit hackerrank</a></div><br>
+   <!-- Bookmarks -->
+    <h2 id="about"></h2>
+    <p>Full stack is all about HTML CSS and javascript</p>
+    <a href="#about">Click to view About </a>
+</body>
+</html>
